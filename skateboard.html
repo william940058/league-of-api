@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<style>
+table, th, td {
+  border: 2px solid orange;
+  empty-cells: hide;
+
+}
+h3{
+	color: green;
+}
+h4{
+	color: red;
+}
+</style>
+	<h3>ADD USERNAME: </h3>  
+	<input id = "userName"></input>
+
+	<button onclick= "getUser()">Add user</button>
+	<p id = "userMessage"></p>
+
+	<h3>RESERVATION: </h3>  
+	<h4>Enter username: </h4>  
+	<input id = "user"></input>
+
+	<h4>Enter startDate: </h4>  
+	<input id = "startDate"></input>
+		
+	
+	<h4>Enter startTime: </h4>  
+	<input id = "startTime"></input>
+		
+	
+	<h4>Enter number of hours: </h4>  
+	<input id = "numHours"></input><br><br>
+	
+	<button onclick= "createUser()">Create</button>
+	<button onclick= "updateUser()">Update</button>
+	<p id = "createMessage"></p>
+	<p id = "updateMessage"></p>
+	
+	<h3>Delete the reservation info: </h3>  
+	<input id = "deleteInfo"></input>
+	<button onclick= "deleteUser()">Delete</button>
+	<p id = "deleteMessage"></p>
+	
+	<h3>Retrieve the reservation info: </h3> 
+    <input id = "retrieveInfo"></input>
+	<button onclick= "retrieveUser()">Retrieve</button>
+	<table id = tab1>
+		<tr>
+    <th>Username</th>
+    <th>Startdate</th>
+    <th>StartTime</th>
+    <th>numHours</th>
+  </tr>
+  <tr>
+    <td id = "tableName1"></td>
+    <td id = "tableDate1"></td>
+    <td id = "tableTime1"></td>
+    <td id = "tableHour1"></td>
+  </tr>
+	</table>
+	<p id = "retrieveMessage"></p>
+	
+	<h3>Get a list of reservations: </h3>  
+	<button onclick= "getRes()">GET</button>
+	<p id = "getMessage"></p>
+	<br><br>
+
+
+	<table id = tab>
+		<tr>
+    <th>Username</th>
+    <th>Startdate</th>
+    <th>StartTime</th>
+    <th>numHours</th>
+  </tr>
+  <tr>
+    <td id = "tableName"></td>
+    <td id = "tableDate"></td>
+    <td id = "tableTime"></td>
+    <td id = "tableHour"></td>
+  </tr>
+  <!-- <div id = tr></div> -->
+	</table>
+
+
+	<script src = "skateboardShare.js" defer></script>
+</body>
+</html>
